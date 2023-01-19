@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu:wght@300;400;500;700&display=swap');
 
+/* ============================================================== */
+/*          Configuración para dispositivos en general          */
 * {
     margin: 0;
     padding: 0;
@@ -7,11 +9,10 @@
 }
 
 body {
-    background: white;
+    background-color: white;
 }
 
-/* =================== Navegación/Menu =================== */
-/* Configuración para dispositivos en general */
+/* ========== Navegación/Menu ========== */
 .barra-nav {
     display: flex;
     position: fixed;
@@ -114,14 +115,10 @@ body {
     opacity: 1;
 }
 
-/* Configuración para dispositivos medios */
-
-/* Configuración para dispositivos chicos */
-
-/* =================== Inicio =================== */
+/* ========== Inicio ========== */
 
 
-/* =================== El CV =================== */
+/* ========== El CV ========== */
 
 h3 {
     background-color: darkblue;
@@ -160,4 +157,107 @@ img {
 #foto {
     text-align: center;
     padding-top: 25px;
+}
+/* ============================================================== */
+/*          Configuración para dispositivos medios              */
+@media (max-width: 768px) {
+    /* ========== Navegación/Menu ========== */
+    .barra-nav {
+        height: 60px;
+        padding: 0px 20px;
+    }
+    
+    /* Logo */
+    #simbolo-logo {
+        width: 28px;
+        font-size: 26px;
+    }
+    
+    #texto-logo-ppal {
+        font-size: 12px;
+    }
+
+    /* ========== Inicio ========== */
+
+
+    /* ========== El CV ========== */
+
+}
+
+/* ============================================================== */
+/*          Configuración para dispositivos chicos              */
+@media (max-width: 576px){
+    /* ========== Navegación/Menu ========== */
+    .barra-nav {
+        border-radius: 0px
+    }
+    
+    /* Botones */
+    #menu-boton {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .barra-nav .menu {
+        position: fixed;
+        flex-direction: column;
+        text-align: justify;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 100%;
+        height: calc(100% - 59px);
+        top: 59px;
+        left: 100%; /* Valor para ocultar la barra */
+        transition: 0.3s;
+        background-color: rgb(224, 224, 224);
+    }
+    
+    .barra-nav .menu .menu-item {
+        width: 100%;
+        height: 80px;
+    }
+    
+    .barra-nav .menu .menu-item .menu-enlace {
+        flex-direction: row;
+        justify-content: left;
+        width: 100vw;
+    }
+    
+    .barra-nav .menu .menu-item .menu-enlace .simbolo-menu {
+        padding: 0px 30px;
+        line-height: 80px;
+        transition: none;
+    }
+    
+    .barra-nav .menu .menu-item .menu-enlace .texto-menu {
+        padding: 0px 70px;
+        font-size: 20px;
+        letter-spacing: 0.1em;
+        opacity: 1;
+        transition: none;
+    }
+    
+    /* Animaciones */
+    .barra-nav .menu .menu-item:hover .menu-enlace {
+        width: 100%;
+        height: 75px;
+    }
+    
+    .barra-nav .menu .menu-item:hover .menu-enlace .simbolo-menu {
+        transform: none;
+    }
+    
+    .barra-nav .menu .menu-item:hover .menu-enlace .texto-menu {
+        transform: none;
+    }
+
+    .menu__checkbox:checked + .menu {
+        left: 0%;
+    }
+
+    /* ========== Inicio ========== */
+
+
+    /* ========== El CV ========== */
+
 }
