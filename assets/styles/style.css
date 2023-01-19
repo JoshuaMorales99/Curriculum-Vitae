@@ -1,26 +1,19 @@
-body {
-    background-color: azure;
-    text-align: justify;
+/* =================== Navegación/Menú =================== */
+
+
+/* =================== Inicio =================== */
+#container {
+    position: flex;
+    height: 100vh;
+    background-color: blue;
 }
 
-h1 {
-    text-align: center;
-}
+/* =================== El CV =================== */
 
 h3 {
     padding: 5px 10px;
     background-color: darkblue;
     color: white;
-}
-
-nav {
-    margin: 10px;
-}
-
-button {
-    width: 100px;
-    padding: 5px;
-    margin: 5px;
 }
 
 p, span {
@@ -29,10 +22,6 @@ p, span {
 
 img {
     width: 80%;
-}
-
-.menu {
-    text-align: center;
 }
 
 .CV {
