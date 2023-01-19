@@ -220,6 +220,25 @@ img {
         font-size: 12px;
     }
 
+    .barra-nav .menu .menu-item {
+        width: 60px;
+    }
+
+    .barra-nav .menu .menu-item .menu-enlace .simbolo-menu {
+        line-height: 65px;
+    }
+
+    .barra-nav .menu .menu-item .menu-enlace .texto-menu {
+        font-size: 0.7em;
+        letter-spacing: 0.04em;
+    }
+
+    /* Animaciones */
+    .barra-nav .menu .menu-item:hover .menu-enlace {
+        width: 60px;
+        height: 60px;
+    }
+
     /* ========== Inicio ========== */
 
 
