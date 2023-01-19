@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: white;
+    background: white;
 }
 
 /* =================== Navegación/Menu =================== */
@@ -57,29 +57,27 @@ body {
     display: none;
 }
 
-.barra-nav .menu {
-    display: flex;
-}
-
 .simbolo-menu {
     font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0;
     color: black;
 }
 
+.barra-nav .menu {
+    display: flex;
+}
+
 .barra-nav .menu .menu-item {
+    position: relative;
     list-style: none;
-    width: 85px;
-    height: 70px;
+    width: 70px;
 }
 
 .barra-nav .menu .menu-item .menu-enlace {
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 100%;
     text-decoration: none;
     color: black;
 }
@@ -102,8 +100,8 @@ body {
 .barra-nav .menu .menu-item:hover .menu-enlace {
     width: 70px;
     height: 70px;
-    border-radius: 25px;
-    box-shadow: silver 3px 3px 4px 0px;
+    border-radius: 20px;
+    box-shadow: silver 2px 2px 4px 0px;
     background-color: lightblue;
 }
 
