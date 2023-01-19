@@ -1,0 +1,41 @@
+[33mcommit 9cff831d9b2d53b387624dd08cc9968d4d64902e[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Joshua D. Morales I <jmorales@frba.utn.edu.ar>
+Date:   Thu Jan 19 20:12:47 2023 -0300
+
+    Estructura básica del Inicio/Portada
+
+[33mcommit d66ba75313121cad15d4685b4d1b197690983ea1[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Joshua D. Morales I <jmorales@frba.utn.edu.ar>
+Date:   Thu Jan 19 17:27:39 2023 -0300
+
+    Menu responsivo para pantallas medias y chicas
+
+[33mcommit 0e999ac21495efd2a3ee31a11c8d632e025d7a1b[m
+Author: Joshua D. Morales I <jmorales@frba.utn.edu.ar>
+Date:   Thu Jan 19 15:45:02 2023 -0300
+
+    Corrigo bug en botones de navegación
+
+[33mcommit af983807e60d05a1f80ab8f117597792eef0bf0f[m
+Author: Joshua D. Morales I <jmorales@frba.utn.edu.ar>
+Date:   Thu Jan 19 00:52:14 2023 -0300
+
+    Estilos y efectos CSS de barra de navegación
+
+[33mcommit 06520ad27f5d741964e8c7a4cea0916346c89dc0[m
+Author: Joshua D. Morales I <jmorales@frba.utn.edu.ar>
+Date:   Wed Jan 18 21:20:24 2023 -0300
+
+    Estructura HTML de barra de navegación
+
+[33mcommit 62340de345cd9c79398b5eae4e11b2aff7ddbfcd[m
+Author: Joshua D. Morales I <jmorales@frba.utn.edu.ar>
+Date:   Mon Jan 16 18:01:41 2023 -0300
+
+    Defino estructura
+
+[33mcommit 54ecb14443e424c6b86ed84c55add3d69dc43c98[m
+Author: Joshua D. Morales I <jmorales@frba.utn.edu.ar>
+Date:   Mon Jan 16 13:02:08 2023 -0300
+
+    Creación de archivos base: README y HTML

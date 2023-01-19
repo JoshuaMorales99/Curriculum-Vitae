@@ -36,17 +36,17 @@ body {
     display: flex;
 }
 
-#simbolo-logo {
+#logo-simbolo {
     width: 40px;
     font-size: 35px;
     color: rgb(0, 0, 200);
 }
 
-#texto-logo-ppal {
+#logo-texto-ppal {
     font-size: 15px;
 }
 
-#texto-logo-sec {
+#logo-texto-sec {
     color: rgb(0, 0, 200);
 }
 
@@ -59,7 +59,7 @@ body {
     display: none;
 }
 
-.simbolo-menu {
+.menu-simbolo {
     font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0;
     color: black;
 }
@@ -84,13 +84,13 @@ body {
     color: black;
 }
 
-.barra-nav .menu .menu-item .menu-enlace .simbolo-menu {
+.barra-nav .menu .menu-item .menu-enlace .menu-simbolo {
     line-height: 75px;
     font-size: 30px;
     transition: 0.5s;
 }
 
-.barra-nav .menu .menu-item .menu-enlace .texto-menu {
+.barra-nav .menu .menu-item .menu-enlace .menu-texto {
     position: absolute;
     font-size: 0.80em;
     letter-spacing: 0.05em;
@@ -107,11 +107,11 @@ body {
     background-color: lightblue;
 }
 
-.barra-nav .menu .menu-item:hover .menu-enlace .simbolo-menu {
+.barra-nav .menu .menu-item:hover .menu-enlace .menu-simbolo {
     transform: translateY(-12px);
 }
 
-.barra-nav .menu .menu-item:hover .menu-enlace .texto-menu {
+.barra-nav .menu .menu-item:hover .menu-enlace .menu-texto {
     transform: translateY(12px);
     opacity: 1;
 }
@@ -211,12 +211,12 @@ img {
     }
     
     /* Logo */
-    #simbolo-logo {
+    #logo-simbolo {
         width: 28px;
         font-size: 26px;
     }
     
-    #texto-logo-ppal {
+    #logo-texto-ppal {
         font-size: 12px;
     }
 
@@ -224,11 +224,11 @@ img {
         width: 60px;
     }
 
-    .barra-nav .menu .menu-item .menu-enlace .simbolo-menu {
+    .barra-nav .menu .menu-item .menu-enlace .menu-simbolo {
         line-height: 65px;
     }
 
-    .barra-nav .menu .menu-item .menu-enlace .texto-menu {
+    .barra-nav .menu .menu-item .menu-enlace .menu-texto {
         font-size: 0.7em;
         letter-spacing: 0.04em;
     }
@@ -285,13 +285,13 @@ img {
         width: 100vw;
     }
     
-    .barra-nav .menu .menu-item .menu-enlace .simbolo-menu {
+    .barra-nav .menu .menu-item .menu-enlace .menu-simbolo {
         padding: 0px 30px;
         line-height: 80px;
         transition: none;
     }
     
-    .barra-nav .menu .menu-item .menu-enlace .texto-menu {
+    .barra-nav .menu .menu-item .menu-enlace .menu-texto {
         padding: 0px 70px;
         font-size: 20px;
         letter-spacing: 0.1em;
@@ -305,11 +305,11 @@ img {
         height: 75px;
     }
     
-    .barra-nav .menu .menu-item:hover .menu-enlace .simbolo-menu {
+    .barra-nav .menu .menu-item:hover .menu-enlace .menu-simbolo {
         transform: none;
     }
     
-    .barra-nav .menu .menu-item:hover .menu-enlace .texto-menu {
+    .barra-nav .menu .menu-item:hover .menu-enlace .menu-texto {
         transform: none;
     }
 
