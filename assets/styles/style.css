@@ -26,8 +26,9 @@ body {
     font-family: 'Ubuntu', sans-serif;
     background-color: whitesmoke;
     text-shadow: silver 1px 2px 2px;
-    box-shadow: silver 0px 0px 4px 0px;
+    box-shadow: silver 0px 0px 4px 1px;
     color: black;
+    z-index: 100;
 }
 
 /* Logo */
@@ -116,7 +117,47 @@ body {
 }
 
 /* ========== Inicio ========== */
+.portada-imagen {
+    position: relative;
+    width: 100%;
+    height: calc(100vw + 5px);
+    user-select: none;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: lightblue;
+}
 
+.portada-imagen .portada-contenido {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    margin: 0px 40px;
+    height: 350px; /* Poner en automatico */
+    top: 19vw;
+    border-radius: 25px;
+    text-shadow: silver 1px 2px 2px;
+    box-shadow: silver 0px 0px 4px 3px;
+    background-color: whitesmoke;
+}
+
+#portada-dibujo {
+    border: 1px solid rgb(0, 0, 200);
+    margin: 0px 50px;
+}
+
+#portada-saludo {
+    position: relative;
+    width: 228px;
+    padding-right: 50px;
+    font-size: 35px;
+    font-style: oblique;
+}
+
+#portada-nombre {
+    font-size: 20px;
+    padding-right: 50px;
+}
 
 /* ========== El CV ========== */
 
@@ -130,9 +171,11 @@ img {
 }
 
 .CV {
+    position: relative;
     display: flex;
     margin-left: 5%;
     width: 90%;
+    top: 20px;
 }
 
 .izquierda {
