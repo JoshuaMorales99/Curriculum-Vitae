@@ -72,6 +72,7 @@ body {
     position: relative;
     list-style: none;
     width: 70px;
+    top: 8px;
 }
 
 .barra-nav .menu .menu-item .menu-enlace {
@@ -163,11 +164,11 @@ body {
 
 /* ========== Mi CV ========== */
 .CV {
-    text-align: justify;
-    padding: 20px 100px;
+    padding: 20px 50px;
     width: 100%;
     font-weight: normal;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
     /*top: 80px;*/
     background-color: white;
 }
@@ -183,8 +184,8 @@ body {
 
 /* Lado izquierdo del CV*/
 .CV .CV-izquierda {
-    width: 25%;
-    font-size: 15px;
+    text-align: left;
+    width: 35%;
     border-right: 2px solid black;
     text-shadow: silver 2px 2px 3px;
     background-color: lightblue;
@@ -197,7 +198,7 @@ body {
 }
 
 #foto {
-    width: 80%;
+    width: 60%;
     margin: 5px;
     padding: 5px;
     border-radius: 20%;
@@ -211,6 +212,7 @@ body {
 }
 
 .CV .CV-izquierda .CV-campos {
+    margin: 0px;
     padding: 15px;
     font-size: 17px;
     font-weight: bold;
@@ -224,22 +226,47 @@ body {
 }
 
 .CV .CV-izquierda .CV-datos .CV-datos-items {
-    margin: 0px 15px;
+    margin: 0px 20px;
+}
+
+.CV .CV-izquierda .CV-datos .CV-idioma {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 /* Lado derecho del CV */
 .CV .CV-derecha {
+    text-align: justify;
     width: 75%;
-    line-height: 22px;
-    padding: 0px 15px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    padding: 0px 25px;
     padding-bottom: 15px;
-    font-size: 15px;
 }
 
-.CV .CV-derecha .CV-encabezados {
+.CV .CV-derecha .CV-encabezado {
+    font-size: 35px;
     padding-top: 30px;
     padding-bottom: 10px;
     font-weight: bold;
+    color: rgb(0, 0, 200);
+}
+
+.CV .CV-derecha .CV-experiencia, .CV .CV-derecha .CV-educacion {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.CV .CV-derecha .CV-pasatiempos {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+#CV-pasatiempo-logo {
+    font-size: 70px;
 }
 
 /* ========== Contacto ========== */
@@ -260,7 +287,7 @@ footer {
 
 /* ============================================================== */
 /*          Configuración para dispositivos medios              */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     /* ========== Navegación/Menu ========== */
     .barra-nav {
         height: 60px;
