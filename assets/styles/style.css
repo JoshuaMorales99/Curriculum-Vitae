@@ -229,14 +229,20 @@ body {
 /* Lado derecho del CV */
 .CV .CV-derecha {
     width: 75%;
+    line-height: 22px;
     padding: 0px 15px;
+    padding-bottom: 15px;
     font-size: 15px;
 }
 
 .CV .CV-derecha .CV-encabezados {
     padding-top: 30px;
     padding-bottom: 10px;
+    font-weight: bold;
 }
+
+/* ========== Contacto ========== */
+
 
 /* ========== Pie de página ========== */
 footer {
@@ -292,7 +298,10 @@ footer {
     /* ========== Inicio ========== */
 
 
-    /* ========== El CV ========== */
+    /* ========== Mi CV ========== */
+
+
+    /* ========== Contacto ========== */
 
 
     /* ========== Pie de página ========== */
@@ -374,7 +383,10 @@ footer {
     /* ========== Inicio ========== */
 
 
-    /* ========== El CV ========== */
+    /* ========== Mi CV ========== */
+
+
+    /* ========== Contacto ========== */
 
 
     /* ========== Pie de página ========== */
