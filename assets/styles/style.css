@@ -345,7 +345,45 @@ footer {
     }
 
     /* ========== Mi CV ========== */
-
+    .CV {
+        padding: 20px 20px;
+        font-size: 12px;
+    }
+    
+    /* Lado izquierdo del CV*/
+    #nombre {
+        font-size: 20px;
+    }
+    
+    .CV .CV-izquierda .CV-datos {
+        padding: 10px;
+        line-height: 170%;
+    }
+    
+    .CV .CV-izquierda .CV-datos .CV-datos-items {
+        margin: 0px 15px;
+    }
+    
+    /* Lado derecho del CV */
+    .CV .CV-derecha {
+        line-height: 20px;
+        padding: 0px 15px;
+    }
+    
+    .CV .CV-derecha .CV-encabezado {
+        font-size: 25px;
+        padding-top: 15px;
+        padding-bottom: 0px;
+    }
+    
+    .CV .CV-derecha .CV-experiencia, .CV .CV-derecha .CV-educacion {
+        font-size: 16px;
+        padding-top: 10px;
+    }
+    
+    #CV-pasatiempo-logo {
+        font-size: 40px;
+    }
 
     /* ========== Contacto ========== */
 
@@ -448,7 +486,44 @@ footer {
     }
 
     /* ========== Mi CV ========== */
+    .CV {
+        padding: 20px 5px;
+        font-size: 9px;
+        text-shadow: none;
+    }
+    
+    /* Lado izquierdo del CV*/
+    #nombre {
+        font-size: 18px;
+    }
 
+    .CV .CV-izquierda .CV-campos {
+        font-size: 15px;
+    }
+    
+    .CV .CV-izquierda .CV-datos {
+        padding: 5px;
+        line-height: 170%;
+    }
+    
+    /* Lado derecho del CV */
+    .CV .CV-derecha {
+        padding: 0px 10px;
+    }
+    
+    .CV .CV-derecha .CV-encabezado {
+        font-size: 20px;
+        padding-top: 8px;
+    }
+    
+    .CV .CV-derecha .CV-experiencia, .CV .CV-derecha .CV-educacion {
+        font-size: 10px;
+        padding-top: 5px;
+    }
+    
+    #CV-pasatiempo-logo {
+        font-size: 30px;
+    }
 
     /* ========== Contacto ========== */
 
