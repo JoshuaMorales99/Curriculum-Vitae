@@ -119,16 +119,19 @@ body {
 
 /* ========== Inicio ========== */
 .portada-imagen {
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 100vw;
+    width: 100%;
     height: calc(100vh + 70px) ;
     user-select: none;
     font-family: 'Ubuntu', sans-serif;
+    background-image: url("https://wallpaperaccess.com/full/4635743.jpg");
     background-color: lightblue;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .portada-imagen .portada-contenido {
@@ -145,8 +148,7 @@ body {
 }
 
 #portada-dibujo {
-    margin: 0px 50px;       /* Verificar con la imagen */
-    border: 1px solid rgb(0, 0, 200);
+    width: 325px;
 }
 
 #portada-saludo {
@@ -155,6 +157,7 @@ body {
     padding-right: 50px;
     font-size: 35px;
     font-style: oblique;
+    color: rgb(0, 0, 200);
 }
 
 #portada-nombre {
@@ -331,6 +334,7 @@ footer {
     
     #portada-dibujo {
         margin: 0px 20px; /* Verificar con la imagen */
+        width: 225px;
     }
     
     #portada-saludo {
@@ -467,11 +471,12 @@ footer {
     /* ========== Inicio ========== */
     .portada-imagen .portada-contenido {
         margin: 0px 15px;
-        height: 250px;
+        height: 200px;
     }
     
     #portada-dibujo {
         margin: 0px 10px;       /* Verificar con la imagen */
+        width: 140px;
     }
     
     #portada-saludo {
