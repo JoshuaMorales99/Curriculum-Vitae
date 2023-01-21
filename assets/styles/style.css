@@ -295,6 +295,10 @@ footer .foot-logo {
     margin: 0px 50px;
 }
 
+#logo-AP {
+    filter: invert(100%); /* Quitar en modo oscuro */
+}
+
 footer .foot-texto {
     height: 5px;
 }
@@ -345,7 +349,7 @@ footer .foot-texto {
     }
     
     #portada-dibujo {
-        margin: 0px 20px; /* Verificar con la imagen */
+        margin: 0px 20px;
         width: 225px;
     }
     
@@ -494,7 +498,7 @@ footer .foot-texto {
     }
     
     #portada-dibujo {
-        margin: 0px 10px;       /* Verificar con la imagen */
+        margin: 0px 10px;
         width: 140px;
     }
     
