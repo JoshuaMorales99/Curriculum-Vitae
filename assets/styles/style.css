@@ -278,13 +278,25 @@ body {
 /* ========== Pie de página ========== */
 footer {
     display: flex;
+    align-items: center;
+    text-align: center;
     justify-content: space-between;
     user-select: none;
+    padding: 8px 15px;
     font-family: 'Ubuntu', sans-serif;
-    padding: 20px 10px;
     border-radius: 15px 15px 0px 0px;
     box-shadow: silver 0px 0px 4px 1px;
     background-color: whitesmoke;
+    color: grey;
+}
+
+footer .foot-logo {
+    width: 100px;
+    margin: 0px 50px;
+}
+
+footer .foot-texto {
+    height: 5px;
 }
 
 
@@ -393,7 +405,14 @@ footer {
 
 
     /* ========== Pie de página ========== */
+    footer .foot-logo {
+        width: 80px;
+        margin: 0px 10px;
+    }
 
+    footer .foot-texto {
+        font-size: 12px;
+    }
 }
 
 
@@ -534,5 +553,18 @@ footer {
 
 
     /* ========== Pie de página ========== */
+    footer {
+        padding: 0px 8px;
+        border-radius: 0px;
+    }
 
+    footer .foot-logo {
+        width: 28px;
+        margin: 0px 8px;
+    }
+
+    footer .foot-texto {
+        font-size: 6px;
+        padding-top: 8px;
+    }
 }
