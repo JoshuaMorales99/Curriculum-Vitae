@@ -172,7 +172,6 @@ body {
     font-weight: normal;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
-    /*top: 80px;*/
     background-color: white;
 }
 
@@ -372,9 +371,15 @@ footer .foot-texto {
     
     /* Lado izquierdo del CV*/
     #nombre {
+        padding: 15px 7px;
         font-size: 20px;
     }
     
+    .CV .CV-izquierda .CV-campos {
+        padding: 10px;
+        font-size: 15px;
+    }
+
     .CV .CV-izquierda .CV-datos {
         padding: 10px;
         line-height: 170%;
@@ -442,6 +447,7 @@ footer .foot-texto {
         overflow-y: auto;
         width: 100%;
         height: calc(100% - 59px);
+        padding: 0px;
         top: 59px;
         left: 100%; /* Valor para ocultar la barra */
         transition: 0.3s;
@@ -449,7 +455,7 @@ footer .foot-texto {
     }
     
     .barra-nav .menu .menu-item {
-        width: 100%;
+        width: 100vw;
         height: 80px;
     }
     
@@ -521,12 +527,19 @@ footer .foot-texto {
     }
     
     /* Lado izquierdo del CV*/
+    .CV .CV-izquierda {
+        width: 40%;
+        text-shadow: none;
+    }
+
     #nombre {
-        font-size: 18px;
+        padding: 10px 7px;
+        font-size: 15px;
     }
 
     .CV .CV-izquierda .CV-campos {
-        font-size: 15px;
+        padding: 5px;
+        font-size: 10px;
     }
     
     .CV .CV-izquierda .CV-datos {
@@ -536,12 +549,14 @@ footer .foot-texto {
     
     /* Lado derecho del CV */
     .CV .CV-derecha {
+        line-height: 20px;
+        width: 60%;
         padding: 0px 10px;
     }
     
     .CV .CV-derecha .CV-encabezado {
-        font-size: 20px;
-        padding-top: 8px;
+        font-size: 15px;
+        padding-top: 7px;
     }
     
     .CV .CV-derecha .CV-experiencia, .CV .CV-derecha .CV-educacion {
