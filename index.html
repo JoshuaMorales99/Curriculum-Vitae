@@ -88,7 +88,7 @@
             <p><strong>Nacimiento: </strong>05/03/1990</p>
             <p><strong>Celular: </strong>(357) 47x-255x</p>
             <p><strong>Dirección: </strong>17xx Camden Ave, EEUU</p>
-            <p><strong>Email: </strong>manuel.romera@example.com</p>
+            <p><strong>Email: </strong>manu.romera@example.com</p>
           </div>
 
           <h3 class="CV-campos">Lenguajes</h3>
@@ -189,7 +189,24 @@
 
     <!-- =================== Contancto =================== -->
     <div class="contacto">
-      
+      <form class="contacto-contenido" action="#" method="get">
+        <h3 class="contacto-titulo">Enviar un Mensaje</h3>
+        <div class="contacto-info">
+          <label class="contacto-texto" for="contacto-nombre">Nombre <span style="color: crimson;">*</span></label>
+          <input class="contacto-datos" type="text" id="contacto-nombre" required>
+
+          <label class="contacto-texto" for="contacto-telefono">Telefono</label>
+          <input class="contacto-datos" type="email" id="contacto-telefono">
+
+          <label class="contacto-texto" for="contacto-email">Email <span style="color: crimson;">*</span></label>
+          <input class="contacto-datos" type="email" id="contacto-email" required>
+
+          <label class="contacto-texto" for="contacto-mensaje">Mensaje <span style="color: crimson;">*</span></label>
+          <textarea class="contacto-datos" id="contacto-mensaje" required></textarea>
+
+          <input id="contacto-boton" type="submit" value="Enviar Mensaje">
+        </div>
+      </form>
     </div>
 
     <!-- =================== Pie de página =================== -->
