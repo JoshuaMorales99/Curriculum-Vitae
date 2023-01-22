@@ -167,7 +167,7 @@ body {
 
 /* ========== Mi CV ========== */
 .CV {
-    padding: 20px 50px;
+    padding: 90px 50px;
     width: 100%;
     font-weight: normal;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -278,7 +278,8 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: calc(100vh + 70px);
+    padding-top: 90px;
+    padding-bottom: 90px;
     user-select: none;
     font-family: 'Ubuntu', sans-serif;
     background: linear-gradient(45deg, #2CABFF 0%, #78E4FF 100%);
@@ -441,7 +442,7 @@ footer .foot-texto {
 
     /* ========== Mi CV ========== */
     .CV {
-        padding: 20px 20px;
+        padding: 80px 20px;
         font-size: 12px;
     }
     
@@ -487,6 +488,11 @@ footer .foot-texto {
     }
 
     /* ========== Contacto ========== */
+    .contacto {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
     .contacto .contacto-contenido {
         width: 75%;
         padding: 30px 30px;
@@ -629,7 +635,7 @@ footer .foot-texto {
 
     /* ========== Mi CV ========== */
     .CV {
-        padding: 20px 5px;
+        padding: 80px 5px;
         font-size: 7.5px;
         text-shadow: none;
     }
