@@ -684,26 +684,24 @@ footer .foot-texto {
     }
     
     .contacto .contacto-contenido .contacto-titulo {
-        font-size: 12px;
+        margin-bottom: 10px;
+        font-size: 14px;
     }
     
     .contacto .contacto-contenido .contacto-info .contacto-texto {
-        font-size: 10px;
-        font-weight: 300;
+        font-size: 11px;
+        font-weight: 400;
+        text-shadow: none;
     }
 
     .contacto .contacto-contenido .contacto-info .contacto-datos {
         width: 100%;
-        padding: 3px 0px 3px;
-        margin-bottom: 10px;
+        padding: 0px;
+        margin-bottom: 9px;
         border-bottom: 1px solid gainsboro;
-        font-size: 12px;
-        font-weight: normal;
+        font-size: 11px;
+        font-weight: lighter;
         text-shadow: none;
-    }
-    
-    .contacto .contacto-contenido .contacto-info .contacto-datos {
-        font-size: 8px;
     }
     
     #contacto-boton {
