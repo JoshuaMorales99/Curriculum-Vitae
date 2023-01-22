@@ -487,7 +487,39 @@ footer .foot-texto {
     }
 
     /* ========== Contacto ========== */
-
+    .contacto .contacto-contenido {
+        width: 75%;
+        padding: 30px 30px;
+        border-radius: 25px;
+        text-shadow: silver 1px 2px 1px;
+    }
+    
+    .contacto .contacto-contenido .contacto-titulo {
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+    
+    .contacto .contacto-contenido .contacto-info .contacto-texto {
+        font-size: 14px;
+        font-weight: 500;
+    }
+    
+    .contacto .contacto-contenido .contacto-info .contacto-datos {
+        border-bottom: 2px solid gainsboro;
+        font-size: 13px;
+    }
+    
+    #contacto-mensaje {
+        max-height: 90px;
+    }
+    
+    #contacto-boton {
+        width: 140px;
+        padding: 6px;
+        font-size: 15px;
+        font-weight: 400;
+        box-shadow: silver 0px 0px 4px 2px;
+    }
 
     /* ========== Pie de página ========== */
     footer .foot-logo {
@@ -645,7 +677,30 @@ footer .foot-texto {
     }
 
     /* ========== Contacto ========== */
-
+    .contacto .contacto-contenido {
+        width: 85%;
+        padding: 15px 20px;
+        border-radius: 15px;
+    }
+    
+    .contacto .contacto-contenido .contacto-titulo {
+        font-size: 18px;
+    }
+    
+    .contacto .contacto-contenido .contacto-info .contacto-texto {
+        font-size: 12px;
+        font-weight: 400;
+    }
+    
+    .contacto .contacto-contenido .contacto-info .contacto-datos {
+        font-size: 10px;
+    }
+    
+    #contacto-boton {
+        width: 120px;
+        border-radius: 20px;
+        font-size: 12px;
+    }
 
     /* ========== Pie de página ========== */
     footer {
