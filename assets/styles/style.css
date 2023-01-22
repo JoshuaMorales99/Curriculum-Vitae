@@ -678,28 +678,38 @@ footer .foot-texto {
 
     /* ========== Contacto ========== */
     .contacto .contacto-contenido {
-        width: 85%;
+        width: 80%;
         padding: 15px 20px;
         border-radius: 15px;
     }
     
     .contacto .contacto-contenido .contacto-titulo {
-        font-size: 18px;
+        font-size: 12px;
     }
     
     .contacto .contacto-contenido .contacto-info .contacto-texto {
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    .contacto .contacto-contenido .contacto-info .contacto-datos {
+        width: 100%;
+        padding: 3px 0px 3px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid gainsboro;
         font-size: 12px;
-        font-weight: 400;
+        font-weight: normal;
+        text-shadow: none;
     }
     
     .contacto .contacto-contenido .contacto-info .contacto-datos {
-        font-size: 10px;
+        font-size: 8px;
     }
     
     #contacto-boton {
-        width: 120px;
-        border-radius: 20px;
-        font-size: 12px;
+        width: 100px;
+        border-radius: 10px;
+        font-size: 10px;
     }
 
     /* ========== Pie de página ========== */
