@@ -1,16 +1,34 @@
 /* ========================= Para el menu responsivo (pantallas chicas) ========================= */
-// Para desabilitar el scroll del body cuando se abre el menu en dispositivos chicos
+// Para deshabilitar el scroll del body cuando se abre el menu en dispositivos chicos
 document.querySelector(".menu__checkbox").addEventListener('change', (event) => {
-    document.body.style.overflow = event.target.checked ? "hidden" : "auto";
+    cambiarEstadoScroll(event);
 })
 
 // Para ocultar el menu en dispositivos chicos al hacer click en un elemento del mismo
-const aux = document.getElementsByClassName('menu-enlace');
+const elementos = document.getElementsByClassName('menu-enlace');
 // Para agregar un escuchador a cada elemento del menu
-for (let i = 0; i < (aux.length) - 1; i++) {
-    aux[i].addEventListener('click', (event) => {
-        document.getElementById('menu-checkbox').checked = false;
+for (let i = 0; i < (elementos.length) - 1; i++) {
+    elementos[i].addEventListener('click', (event) => {
+        ocultarMenu();
+        // Bug fix: Al presionar un elemnto del menu, quedaba deshabilitado el scroll
+        cambiarEstadoScroll(event); 
     })
+}
+
+// Bug fix: Al reescalar la pantalla de chico a otro valor mayor, quedaba desabilitado el scroll
+window.addEventListener('resize', (event) => {
+    if (window.screen.width >= 576 && document.body.style.overflow == 'hidden') {
+        ocultarMenu(event)
+        cambiarEstadoScroll(event);
+    }
+})
+
+function cambiarEstadoScroll(event) {
+    document.body.style.overflow = event.target.checked ? 'hidden' : 'auto';
+}
+
+function ocultarMenu() {
+    document.getElementById('menu-checkbox').checked = false;
 }
 
 /* =============================== Para definir el tema de la página =============================== */

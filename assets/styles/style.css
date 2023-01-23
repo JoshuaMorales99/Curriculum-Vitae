@@ -698,6 +698,7 @@ footer .foot-texto {
     .CV .CV-izquierda .CV-datos {
         padding: 5px;
         line-height: 170%;
+        font-size: 7.5px;
     }
     
     /* Lado derecho del CV */
