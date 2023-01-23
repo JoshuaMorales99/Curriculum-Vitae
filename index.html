@@ -54,12 +54,21 @@
           <span class="menu-texto">Contacto</span>
         </a></li>
         <!-- Modo Oscuro/Modo Claro -->
-        <li class="menu-item"><a class="menu-enlace" href="#">
+        <li class="menu-item"><span id="btn-oscuro-claro" class="menu-enlace">
           <div class="menu-simbolo">
-            <span class="material-symbols-outlined">dark_mode</span>
+            <span id="simbolo-oscuro-claro" class="material-symbols-outlined">dark_mode</span>
           </div>
-          <span class="menu-texto">Modo Oscuro</span>
-        </a></li>
+          <span id="texto-oscuro-claro" class="menu-texto">Modo Oscuro</span>
+        </span></li>
+
+        <!--
+          <li class="menu-item"><span id="btn-oscuro-claro" class="menu-enlace">
+						<div class="simbolo-menu">
+							<span id="simbolo-oscuro-claro" class="material-symbols-outlined">dark_mode</span>
+						</div>
+						<span id="texto-oscuro-claro" class="texto-menu">Modo oscuro</span>
+					</span></li>
+        -->
       </ul>
     </nav>
 
@@ -127,7 +136,7 @@
         <!-- Lado derecho del CV -->
         <div class="CV-derecha">
           <h2 class="CV-encabezado">Sobre mi</h2>
-          <p>Soy una programadora web con más de 10 años de experiencia contribuyendo desde el Front-End al desarrollo de aplicaciones web y UI. Desarrollador de software con experiencia en diseño, instalación, pruebas y mantenimiento de sistemas de software. Dominio de varias plataformas, lenguajes y sistemas integrados. Experiencia en las herramientas y procedimientos de desarrollo más vanguardistas. Capaz de autogestionar eficaz en proyectos independientes. Buenas habilidades de colaboración dentro de un equipo productivo.</p>
+          <p>Soy una programadora web con más de 10 años de experiencia contribuyendo desde el Front-End al desarrollo de aplicaciones web y UI. Cuento con experiencia en diseño, instalación, pruebas y mantenimiento de sistemas de software. Tengo dominio de varias plataformas, lenguajes y sistemas integrados. Experiencia en las herramientas y procedimientos de desarrollo más vanguardistas. Capaz de autogestionar eficazmente proyectos independientes. Buenas habilidades de colaboración dentro de un equipo productivo.</p>
           
           <h2 class="CV-encabezado">Experiencias</h2>
           <div>
@@ -195,7 +204,7 @@
           <label class="contacto-texto" for="contacto-nombre">Nombre <span style="color: crimson;">*</span></label>
           <input class="contacto-datos" type="text" id="contacto-nombre" required>
 
-          <label class="contacto-texto" for="contacto-telefono">Telefono</label>
+          <label class="contacto-texto" for="contacto-telefono">Teléfono</label>
           <input class="contacto-datos" type="email" id="contacto-telefono">
 
           <label class="contacto-texto" for="contacto-email">Email <span style="color: crimson;">*</span></label>

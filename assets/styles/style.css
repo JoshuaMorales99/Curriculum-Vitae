@@ -1,5 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu:wght@300;400;500;700&display=swap');
 
+:root {
+    --color-fondo-ppal: black;
+    --color-fondo-sec: linear-gradient(180deg, #000000 0%, #0E3954 100%);
+    --color-fuente-ppal: white;
+    --color-fuente-sec: black;
+    --color-borde-ppal: white;
+    --color-borde-sec: black;
+    --color-contenedor: rgb(49, 49, 49);
+    --color-menu-responsivo: black;
+    --color-especial: lightblue;
+    --color-seleccion: rgb(0, 0, 200);
+    --color-shadow-text: rgb(40, 40, 40);
+    --filtro-imagen: invert(100%);
+  }
+  
+[tema = "oscuro"]{
+    --color-fondo-ppal: white;
+    --color-fondo-sec: linear-gradient(180deg, #2CABFF 0%, #78E4FF 100%);
+    --color-fuente-ppal: black;
+    --color-fuente-sec: white;
+    --color-borde-ppal: black;
+    --color-borde-sec: white;
+    --color-contenedor: whitesmoke;
+    --color-menu-responsivo: rgb(224, 224, 224);
+    --color-especial: rgb(0, 0, 200);
+    --color-seleccion: lightblue;
+    --color-shadow-text: silver;
+    --filtro-imagen: invert(0%);
+}
+
 /* ============================================================== */
 /*          Configuración para dispositivos en general          */
 * {
@@ -9,7 +39,7 @@
 }
 
 body {
-    background-color: white;
+    background: var(--color-fondo-ppal);
 }
 
 /* ========== Navegación/Menu ========== */
@@ -24,10 +54,10 @@ body {
     justify-content: space-between;
     user-select: none;
     font-family: 'Ubuntu', sans-serif;
-    background-color: whitesmoke;
-    text-shadow: silver 1px 2px 2px;
-    box-shadow: silver 0px 0px 4px 1px;
-    color: black;
+    background-color: var(--color-contenedor);
+    text-shadow: var(--color-shadow-text) 1px 2px 2px;
+    box-shadow: var(--color-shadow-text) 0px 0px 4px 1px;
+    color: var(--color-fuente-ppal);
     z-index: 100;
 }
 
@@ -39,7 +69,7 @@ body {
 #logo-simbolo {
     width: 40px;
     font-size: 35px;
-    color: rgb(0, 0, 200);
+    color: var(--color-especial);
 }
 
 #logo-texto-ppal {
@@ -47,7 +77,7 @@ body {
 }
 
 #logo-texto-sec {
-    color: rgb(0, 0, 200);
+    color: var(--color-especial);
 }
 
 /* Botones */
@@ -61,7 +91,7 @@ body {
 
 .menu-simbolo {
     font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0;
-    color: black;
+    color: var(--color-fuente-ppal);
 }
 
 .barra-nav .menu {
@@ -82,7 +112,7 @@ body {
     align-items: center;
     text-align: center;
     text-decoration: none;
-    color: black;
+    color: var(--color-fuente-ppal);
 }
 
 .barra-nav .menu .menu-item .menu-enlace .menu-simbolo {
@@ -93,6 +123,7 @@ body {
 
 .barra-nav .menu .menu-item .menu-enlace .menu-texto {
     position: absolute;
+    width: 60px;
     font-size: 0.75em;
     letter-spacing: 0.05em;
     opacity: 0;
@@ -105,7 +136,7 @@ body {
     height: 70px;
     border-radius: 20px;
     box-shadow: silver 2px 2px 4px 0px;
-    background-color: lightblue;
+    background-color: var(--color-seleccion);
 }
 
 .barra-nav .menu .menu-item:hover .menu-enlace .menu-simbolo {
@@ -128,7 +159,7 @@ body {
     user-select: none;
     font-family: 'Ubuntu', sans-serif;
     background-image: url("https://wallpaperaccess.com/full/4635743.jpg");
-    background-color: lightblue;
+    background-color: var(--color-fondo-sec);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -142,13 +173,14 @@ body {
     margin: 0px 40px;
     height: 350px;
     border-radius: 25px;
-    text-shadow: silver 1px 2px 2px;
-    box-shadow: silver 0px 0px 4px 3px;
-    background-color: whitesmoke;
+    text-shadow: var(--color-shadow-text) 1px 2px 2px;
+    box-shadow: var(--color-shadow-text) 0px 0px 4px 3px;
+    background-color: var(--color-contenedor);
 }
 
 #portada-dibujo {
     width: 325px;
+    filter: var(--filtro-imagen);
 }
 
 #portada-saludo {
@@ -157,12 +189,13 @@ body {
     padding-right: 50px;
     font-size: 35px;
     font-style: oblique;
-    color: rgb(0, 0, 200);
+    color: var(--color-especial);
 }
 
 #portada-nombre {
     font-size: 20px;
     padding-right: 50px;
+    color: var(--color-fuente-ppal);
 }
 
 /* ========== Mi CV ========== */
@@ -172,25 +205,25 @@ body {
     font-weight: normal;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
-    background-color: white;
+    background-color: var(--color-fondo-ppal);
 }
 
 .CV .CV-contenido {
     display: flex;
     border-radius: 0.75%;
-    border: 3px solid black;
+    border: 3px solid var(--color-borde-ppal);
     background-color: whitesmoke;
     box-shadow: silver 0px 0px 4px 3px;
-    color: black;
+    color: var(--color-fuente-ppal);
 }
 
 /* Lado izquierdo del CV*/
 .CV .CV-izquierda {
     text-align: left;
     width: 35%;
-    border-right: 2px solid black;
-    text-shadow: silver 2px 2px 3px;
-    background-color: lightblue;
+    border-right: 2px solid var(--color-borde-ppal);
+    text-shadow: var(--color-shadow-text) 0px 1px 2px;
+    background-color: var(--color-seleccion);
 }
 
 .CV .CV-izquierda .CV-foto {
@@ -204,11 +237,11 @@ body {
     margin: 5px;
     padding: 5px;
     border-radius: 20%;
-    border: 3px solid white;
+    border: 3px solid var(--color-borde-sec);
 }
 
 #nombre {
-    font-size: 25px;
+    font-size: 30px;
     padding: 25px 7px;
     text-align: center;
 }
@@ -216,15 +249,16 @@ body {
 .CV .CV-izquierda .CV-campos {
     margin: 0px;
     padding: 15px;
-    font-size: 17px;
+    font-size: 25px;
     font-weight: bold;
-    background-color: rgb(0, 0, 200);
-    color: white;
+    background-color: var(--color-especial);
+    color: var(--color-fuente-sec);
 }
 
 .CV .CV-izquierda .CV-datos {
     padding: 15px;
     line-height: 200%;
+    font-size: 18px;
 }
 
 .CV .CV-izquierda .CV-datos .CV-datos-items {
@@ -245,6 +279,7 @@ body {
     letter-spacing: 1px;
     padding: 0px 25px;
     padding-bottom: 15px;
+    background-color: var(--color-contenedor);
 }
 
 .CV .CV-derecha .CV-encabezado {
@@ -252,7 +287,7 @@ body {
     padding-top: 30px;
     padding-bottom: 10px;
     font-weight: bold;
-    color: rgb(0, 0, 200);
+    color: var(--color-especial);
 }
 
 .CV .CV-derecha .CV-experiencia, .CV .CV-derecha .CV-educacion {
@@ -282,23 +317,24 @@ body {
     padding-bottom: 90px;
     user-select: none;
     font-family: 'Ubuntu', sans-serif;
-    background: linear-gradient(45deg, #2CABFF 0%, #78E4FF 100%);
+    background: var(--color-fondo-sec);
+    color: var(--color-fuente-ppal);
 }
 
 .contacto .contacto-contenido {
     width: 50%;
     padding: 30px 40px;
     border-radius: 25px;
-    text-shadow: silver 2px 2px 1px;
+    text-shadow: var(--color-shadow-text) 0px 1px 1px;
     box-shadow: silver 0px 0px 4px 4px;
-    background-color: whitesmoke;
+    background-color: var(--color-contenedor);
 }
 
 .contacto .contacto-contenido .contacto-titulo {
     margin-bottom: 30px;
     font-size: 30px;
     font-weight: bold;
-    color: rgb(0, 0, 200);
+    color: var(--color-especial);
 }
 
 .contacto .contacto-contenido .contacto-info {
@@ -342,13 +378,13 @@ body {
     border-radius: 25px;
     font-size: 16px;
     font-weight: 500;
-    box-shadow: silver 0px 0px 4px 3px;
-    background-color: rgb(0, 0, 200);
-    color: white;
+    box-shadow: var(--color-shadow-text) 0px 0px 4px 3px;
+    background-color: var(--color-especial);
+    color: var(--color-fuente-sec);
 }
 
 #contacto-boton:hover {
-    background-color: rgb(0, 0, 255);
+    background-color: var(--color-especial);
 }
 
 /* ========== Pie de página ========== */
@@ -360,9 +396,8 @@ footer {
     user-select: none;
     padding: 8px 15px;
     font-family: 'Ubuntu', sans-serif;
-    border-radius: 15px 15px 0px 0px;
-    box-shadow: silver 0px 0px 4px 1px;
-    background-color: whitesmoke;
+    box-shadow: var(--color-shadow-text) 0px 0px 4px 1px;
+    background-color: var(--color-contenedor);
     color: grey;
 }
 
@@ -372,7 +407,7 @@ footer .foot-logo {
 }
 
 #logo-AP {
-    filter: invert(100%); /* Quitar en modo oscuro */
+    filter: var(--filtro-imagen);
 }
 
 footer .foot-texto {
@@ -460,6 +495,7 @@ footer .foot-texto {
     .CV .CV-izquierda .CV-datos {
         padding: 10px;
         line-height: 170%;
+        font-size: 11px;
     }
     
     .CV .CV-izquierda .CV-datos .CV-datos-items {
@@ -497,7 +533,7 @@ footer .foot-texto {
         width: 75%;
         padding: 30px 30px;
         border-radius: 25px;
-        text-shadow: silver 1px 2px 1px;
+        text-shadow: var(--color-shadow-text) 1px 2px 1px;
     }
     
     .contacto .contacto-contenido .contacto-titulo {
@@ -524,7 +560,7 @@ footer .foot-texto {
         padding: 6px;
         font-size: 15px;
         font-weight: 400;
-        box-shadow: silver 0px 0px 4px 2px;
+        box-shadow: var(--color-shadow-text) 0px 0px 4px 2px;
     }
 
     /* ========== Pie de página ========== */
@@ -565,7 +601,7 @@ footer .foot-texto {
         top: 59px;
         left: 100%; /* Valor para ocultar la barra */
         transition: 0.3s;
-        background-color: rgb(224, 224, 224);
+        background-color: var(--color-menu-responsivo);
     }
     
     .barra-nav .menu .menu-item {
@@ -586,6 +622,9 @@ footer .foot-texto {
     }
     
     .barra-nav .menu .menu-item .menu-enlace .menu-texto {
+        display: flex;
+        justify-items: flex-start;
+        width: 300px;
         padding: 0px 70px;
         font-size: 15px;
         letter-spacing: 0.1em;
@@ -653,7 +692,7 @@ footer .foot-texto {
 
     .CV .CV-izquierda .CV-campos {
         padding: 5px;
-        font-size: 10px;
+        font-size: 11px;
     }
     
     .CV .CV-izquierda .CV-datos {
@@ -719,7 +758,6 @@ footer .foot-texto {
     /* ========== Pie de página ========== */
     footer {
         padding: 0px 8px;
-        border-radius: 0px;
     }
 
     footer .foot-logo {
