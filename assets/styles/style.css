@@ -296,6 +296,10 @@ body {
     padding-top: 10px;
 }
 
+.CV .CV-derecha .CV-actividades {
+    padding-left: 32px;
+}
+
 .CV .CV-derecha .CV-pasatiempos {
     display: flex;
     justify-content: space-between;
@@ -443,6 +447,7 @@ footer .foot-texto {
     }
 
     .barra-nav .menu .menu-item .menu-enlace .menu-texto {
+        width: 50px;
         font-size: 0.67em;
         letter-spacing: 0.04em;
     }
@@ -517,6 +522,10 @@ footer .foot-texto {
     .CV .CV-derecha .CV-experiencia, .CV .CV-derecha .CV-educacion {
         font-size: 16px;
         padding-top: 10px;
+    }
+
+    .CV .CV-derecha .CV-actividades {
+        padding-left: 22px;
     }
     
     #CV-pasatiempo-logo {
@@ -716,6 +725,10 @@ footer .foot-texto {
     .CV .CV-derecha .CV-experiencia, .CV .CV-derecha .CV-educacion {
         font-size: 10px;
         padding-top: 5px;
+    }
+
+    .CV .CV-derecha .CV-actividades {
+        padding-left: 15px;
     }
     
     #CV-pasatiempo-logo {
