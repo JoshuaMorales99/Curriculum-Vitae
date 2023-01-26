@@ -1,3 +1,8 @@
+# Curriculum Vitae - CV 2023
+
+
+## 🔴 INFORMACIÓN GENERAL:
+
 En el curso "Introducción | Primeros pasos en Front-end" de
 Ticmas Academy y Argentina Programa 4.0 se propuso como actividad
 lo siguiente:
@@ -8,7 +13,7 @@ fue trabajando a lo largo de los módulos. El CV comprende
 información personal, experiencia y habilidades.
 
 =================================================================
-🔴 EXPLICACIÓN/PROCESOS:
+## 🔴 EXPLICACIÓN/PROCESOS:
 
 Para la realización de este proyecto, se propone que en una hoja
 se escriba toda la información que se quiera incluir en el CV.
@@ -22,7 +27,7 @@ se propone incorporar funcionalidades que implementen JavaScript,
 de manera tal que sumemos comportamiento a lo desarrollado.
 
 =================================================================
-🔴 ENTREGA:
+## 🔴 ENTREGA:
 
 Para entregar dicho proyecto, una vez terminado, se lo subirá a
 GitHub Page. Luego, se pegará el enlace del GitHub en el bloque
