@@ -31,4 +31,5 @@ GitHub Page. Luego, se pegará el enlace del GitHub en el bloque
 "Proyectos" que se encuentra en la página principal del curso.
 
 🟦 Link de la pagina web creada:
+
              https://joshuamorales99.github.io/Curriculum-Vitae/
