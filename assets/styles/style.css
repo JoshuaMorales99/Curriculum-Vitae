@@ -524,12 +524,12 @@ footer .foot-texto {
     }
     
     .CV .CV-derecha .CV-encabezado {
-        margin-top: 15px;
-        margin-bottom: 0px;
+        margin-top: 20px;
         font-size: 25px;
     }
     
     .CV .CV-derecha .CV-experiencia, .CV .CV-derecha .CV-educacion {
+        margin: 10px 0px 5px;
         font-size: 16px;
     }
 
@@ -729,12 +729,11 @@ footer .foot-texto {
     }
     
     .CV .CV-derecha .CV-encabezado {
-        margin-top: 7px;
+        margin-top: 15px;
         font-size: 15px;
     }
     
     .CV .CV-derecha .CV-experiencia, .CV .CV-derecha .CV-educacion {
-        margin: 15px 0px 5px;
         font-size: 10px;
     }
 
