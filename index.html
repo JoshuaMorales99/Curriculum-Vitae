@@ -14,7 +14,7 @@
     <!-- Open Graph data -->
     <meta property="og:title" content="Curriculum Vitae · CV" />
     <meta property="og:type" content="Curriculum Vitae" />
-    <meta property="og:url" content="URL" />
+    <meta property="og:url" content="https://joshuamorales99.github.io/Curriculum-Vitae/" />
     <meta property="og:image" content="assets/img/meta-imagen.png" />
     <meta property="og:description" content="Proyecto CV propuesto por Ticmas Academy y Argentina Programa para el curso: Introducción | Primeros pasos en el desarrollo Front-end" />
 
@@ -70,20 +70,11 @@
           </div>
           <span id="texto-oscuro-claro" class="menu-texto">Modo Oscuro</span>
         </span></li>
-
-        <!--
-          <li class="menu-item"><span id="btn-oscuro-claro" class="menu-enlace">
-						<div class="simbolo-menu">
-							<span id="simbolo-oscuro-claro" class="material-symbols-outlined">dark_mode</span>
-						</div>
-						<span id="texto-oscuro-claro" class="texto-menu">Modo oscuro</span>
-					</span></li>
-        -->
       </ul>
     </nav>
 
     <!-- =================== Inicio =================== -->
-    <div id="inicio" class="portada-imagen">
+    <section id="inicio" class="portada-imagen">
       <div class="portada-contenido">
         <img id="portada-dibujo" src="assets/img/programador-dibujado.png" alt="Persona masculina dibujada">
         <div>
@@ -91,7 +82,7 @@
           <h2 id="portada-nombre">MANUEL ÁNGEL</h2>
         </div>
       </div>
-    </div>
+    </section>
     
     <!-- =================== Mi CV =================== -->
     <main id="mi_CV" class="CV">
@@ -101,7 +92,8 @@
           <div class="CV-foto">
             <img id="foto" src="assets/img/foto.jpeg" alt="Foto">
           </div>
-
+          
+          <!-- Datos Generales -->
           <h2 id="nombre" class="CV-campos">Manuel Ángel Romera</h2>
           <div class="CV-datos">
             <p><strong>Nacimiento: </strong>05/03/1990</p>
@@ -110,6 +102,7 @@
             <p><strong>Email: </strong>manu.romera@example.com</p>
           </div>
 
+          <!-- Lenguajes -->
           <h3 class="CV-campos">Lenguajes</h3>
           <div class="CV-datos">
             <div class="CV-idioma">
@@ -132,6 +125,7 @@
             </div>
           </div>
 
+          <!-- Personalidad -->
           <h3 class="CV-campos">Personalidad</h3>
           <ul class="CV-datos">
             <li class="CV-datos-items">Adaptabilidad</li>
@@ -145,9 +139,11 @@
 
         <!-- Lado derecho del CV -->
         <div class="CV-derecha">
+          <!-- Sobre mi -->
           <h2 class="CV-encabezado">Sobre mi</h2>
           <p>Soy un programador web con más de 10 años de experiencia contribuyendo desde el Front-End al desarrollo de aplicaciones web y UI. Cuento con experiencia en diseño, instalación, pruebas y mantenimiento de sistemas de software. Tengo dominio de varias plataformas, lenguajes y sistemas integrados. Experiencia en las herramientas y procedimientos de desarrollo más vanguardistas. Además, soy capaz de autogestionar eficazmente proyectos independientes. Buenas habilidades de colaboración dentro de un equipo productivo.</p>
           
+          <!-- Experiencias -->
           <h2 class="CV-encabezado">Experiencias</h2>
           <div>
             <h3 class="CV-experiencia">Analista - Desarrollador Front end</h3>
@@ -177,6 +173,7 @@
             </ul>
           </div>
 
+          <!-- Educacion -->
           <h2 class="CV-encabezado">Educación</h2>
           <div>
             <h3 class="CV-educacion">Máster en ingenieria informática</h3><span></span>
@@ -187,6 +184,7 @@
             <p>Universidad de Buenos Aires, Buenos Aires (2008 - 2011)</p>
           </div>
           
+          <!-- Pasatiempos -->
           <h2 class="CV-encabezado">Pasatiempos</h2>
           <div class="CV-pasatiempos">
             <div>
@@ -207,26 +205,27 @@
     </main>
 
     <!-- =================== Contancto =================== -->
-    <div id="contacto" class="contacto">
+    <section id="contacto" class="contacto">
       <form class="contacto-contenido" action="#" method="get">
-        <h3 class="contacto-titulo">Enviar un Mensaje</h3>
+        <h2 class="contacto-titulo">Enviar un Mensaje</h2>
         <div class="contacto-info">
-          <label class="contacto-texto" for="contacto-nombre">Nombre <span style="color: crimson;">*</span></label>
+          <!-- Nombre -->
+          <label class="contacto-texto" for="contacto-nombre">Nombre <span class="obligatorio">*</span></label>
           <input class="contacto-datos" type="text" id="contacto-nombre" required>
-
+          <!-- Telefono -->
           <label class="contacto-texto" for="contacto-telefono">Teléfono</label>
           <input class="contacto-datos" type="email" id="contacto-telefono">
-
-          <label class="contacto-texto" for="contacto-email">Email <span style="color: crimson;">*</span></label>
+          <!-- Email -->
+          <label class="contacto-texto" for="contacto-email">Email <span class="obligatorio">*</span></label>
           <input class="contacto-datos" type="email" id="contacto-email" required>
-
-          <label class="contacto-texto" for="contacto-mensaje">Mensaje <span style="color: crimson;">*</span></label>
+          <!-- Mensaje -->
+          <label class="contacto-texto" for="contacto-mensaje">Mensaje <span class="obligatorio">*</span></label>
           <textarea class="contacto-datos" id="contacto-mensaje" required></textarea>
 
           <input id="contacto-boton" type="submit" value="Enviar Mensaje">
         </div>
       </form>
-    </div>
+    </section>
 
     <!-- =================== Pie de página =================== -->
     <footer>
@@ -234,7 +233,7 @@
         <img id="logo-AP" class="foot-logo" src="assets/img/arg-prog-logo.png" alt="Logo de A.P.">
         <img class="foot-logo" src="assets/img/ticmas-logo.png" alt="Logo de Ticmas">
       </div>
-      <p class="foot-texto">Agradecimientos a: Argentina Programa y Ticmas Academy</p>
+      <p class="foot-texto"><u>Agradecimientos a</u>: A.P. y Ticmas Academy</p>
     </footer>
   </body>
 </html>

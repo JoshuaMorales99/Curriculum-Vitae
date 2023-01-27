@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu:wght@300;400;500;700&display=swap');
 
+/* Colores utilizados en la página web */
 :root {
+    /* Colores para el modo oscuro */
     --color-fondo-ppal: black;
     --color-fondo-sec: linear-gradient(180deg, #000000 0%, #0E3954 100%);
     --color-fuente-ppal: white;
@@ -13,9 +15,10 @@
     --color-seleccion: rgb(0, 0, 200);
     --color-shadow-text: rgb(40, 40, 40);
     --filtro-imagen: invert(100%);
-  }
-  
-[tema = "oscuro"]{
+}
+
+[tema = "alternativo"]{
+    /* Colores para el modo claro */
     --color-fondo-ppal: white;
     --color-fondo-sec: linear-gradient(180deg, #2CABFF 0%, #78E4FF 100%);
     --color-fuente-ppal: black;
@@ -30,8 +33,9 @@
     --filtro-imagen: invert(0%);
 }
 
-/* ============================================================== */
-/*          Configuración para dispositivos en general          */
+/* =============================================================================================== */
+/* |                          Configuración para dispositivos en general                         | */
+/* =============================================================================================== */
 * {
     margin: 0;
     padding: 0;
@@ -47,17 +51,17 @@ body {
     display: flex;
     position: fixed;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
     height: 70px;
     padding: 0px 40px;
     border-radius: 0px 0px 15px 15px;
-    justify-content: space-between;
     user-select: none;
     font-family: 'Ubuntu', sans-serif;
     background-color: var(--color-contenedor);
-    text-shadow: var(--color-shadow-text) 1px 2px 2px;
-    box-shadow: var(--color-shadow-text) 0px 0px 4px 1px;
     color: var(--color-fuente-ppal);
+    text-shadow: 1px 2px 2px var(--color-shadow-text);
+    box-shadow: 0px 0px 4px 1px var(--color-shadow-text);
     z-index: 100;
 }
 
@@ -100,16 +104,16 @@ body {
 
 .barra-nav .menu .menu-item {
     position: relative;
-    list-style: none;
     width: 70px;
     top: 8px;
+    list-style: none;
 }
 
 .barra-nav .menu .menu-item .menu-enlace {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     text-align: center;
     text-decoration: none;
     color: var(--color-fuente-ppal);
@@ -135,8 +139,8 @@ body {
     width: 70px;
     height: 70px;
     border-radius: 20px;
-    box-shadow: silver 2px 2px 4px 0px;
     background-color: var(--color-seleccion);
+    box-shadow: silver 2px 2px 4px 0px;
 }
 
 .barra-nav .menu .menu-item:hover .menu-enlace .menu-simbolo {
@@ -151,6 +155,7 @@ body {
 /* ========== Inicio ========== */
 .portada-imagen {
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -167,15 +172,15 @@ body {
 
 .portada-imagen .portada-contenido {
     display: flex;
+    position: relative;
     align-items: center;
-    justify-content: center;
-    padding: 15px;
-    margin: 0px 40px;
     height: 350px;
+    margin: 0px 40px;
+    padding: 15px;
     border-radius: 25px;
-    text-shadow: var(--color-shadow-text) 1px 2px 2px;
-    box-shadow: var(--color-shadow-text) 0px 0px 4px 3px;
     background-color: var(--color-contenedor);
+    text-shadow: 1px 2px 2px var(--color-shadow-text);
+    box-shadow: 0px 0px 4px 3px var(--color-shadow-text);
 }
 
 #portada-dibujo {
@@ -184,24 +189,23 @@ body {
 }
 
 #portada-saludo {
-    position: relative;
     width: 250px;
     padding-right: 50px;
-    font-size: 35px;
     font-style: oblique;
+    font-size: 35px;
     color: var(--color-especial);
 }
 
 #portada-nombre {
-    font-size: 20px;
     padding-right: 50px;
+    font-size: 20px;
     color: var(--color-fuente-ppal);
 }
 
 /* ========== Mi CV ========== */
 .CV {
-    padding: 90px 50px;
     width: 100%;
+    padding: 90px 50px;
     font-weight: normal;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
@@ -210,26 +214,25 @@ body {
 
 .CV .CV-contenido {
     display: flex;
+    position: relative;
     border-radius: 0.75%;
     border: 3px solid var(--color-borde-ppal);
     background-color: whitesmoke;
-    box-shadow: silver 0px 0px 4px 3px;
     color: var(--color-fuente-ppal);
+    box-shadow: 0px 0px 4px 3px silver;
 }
 
 /* Lado izquierdo del CV*/
 .CV .CV-izquierda {
-    text-align: left;
     width: 35%;
+    text-align: left;
     border-right: 2px solid var(--color-borde-ppal);
-    text-shadow: var(--color-shadow-text) 0px 1px 2px;
     background-color: var(--color-seleccion);
+    text-shadow: 0px 1px 2px var(--color-shadow-text);
 }
 
 .CV .CV-izquierda .CV-foto {
     text-align: center;
-    align-items: center;
-    align-content: center;
 }
 
 #foto {
@@ -241,9 +244,9 @@ body {
 }
 
 #nombre {
-    font-size: 30px;
-    padding: 25px 7px;
     text-align: center;
+    padding: 25px 7px;
+    font-size: 30px;
 }
 
 .CV .CV-izquierda .CV-campos {
@@ -267,41 +270,43 @@ body {
 
 .CV .CV-izquierda .CV-datos .CV-idioma {
     display: flex;
-    justify-content: space-between;
+    position: relative;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 /* Lado derecho del CV */
 .CV .CV-derecha {
     text-align: justify;
     width: 75%;
+    padding: 0px 25px;
     line-height: 30px;
     letter-spacing: 1px;
-    padding: 0px 25px;
-    padding-bottom: 15px;
     background-color: var(--color-contenedor);
 }
 
 .CV .CV-derecha .CV-encabezado {
+    margin-top: 30px;
+    margin-bottom: 10px;
     font-size: 35px;
-    padding-top: 30px;
-    padding-bottom: 10px;
     font-weight: bold;
     color: var(--color-especial);
 }
 
 .CV .CV-derecha .CV-experiencia, .CV .CV-derecha .CV-educacion {
+    margin: 20px 0px 10px;
     font-size: 20px;
     font-weight: bold;
-    padding-top: 10px;
 }
 
 .CV .CV-derecha .CV-actividades {
+    margin: 0px;
     padding-left: 32px;
 }
 
 .CV .CV-derecha .CV-pasatiempos {
     display: flex;
+    position: relative;
     justify-content: space-between;
     padding: 10px 20px;
 }
@@ -312,13 +317,12 @@ body {
 
 /* ========== Contacto ========== */
 .contacto {
-    position: relative;
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding: 90px 0px;
     user-select: none;
     font-family: 'Ubuntu', sans-serif;
     background: var(--color-fondo-sec);
@@ -329,9 +333,9 @@ body {
     width: 50%;
     padding: 30px 40px;
     border-radius: 25px;
-    text-shadow: var(--color-shadow-text) 0px 1px 1px;
-    box-shadow: silver 0px 0px 4px 4px;
     background-color: var(--color-contenedor);
+    text-shadow: 0px 1px 1px var(--color-shadow-text);
+    box-shadow: 0px 0px 4px 4px silver;
 }
 
 .contacto .contacto-contenido .contacto-titulo {
@@ -343,6 +347,7 @@ body {
 
 .contacto .contacto-contenido .contacto-info {
     display: flex;
+    position: relative;
     flex-direction: column;
 }
 
@@ -351,10 +356,14 @@ body {
     font-weight: 500;
 }
 
+.obligatorio {
+    color: crimson;
+}
+
 .contacto .contacto-contenido .contacto-info .contacto-datos {
     width: 100%;
-    padding: 8px 0px 5px;
     margin-bottom: 20px;
+    padding: 8px 0px 5px;
     border-radius: 5px;
     border: none;
     border-bottom: 3px solid gainsboro;
@@ -378,13 +387,13 @@ body {
     align-self: flex-end;
     width: 180px;
     padding: 10px;
-    border: none;
     border-radius: 25px;
+    border: none;
     font-size: 16px;
     font-weight: 500;
-    box-shadow: var(--color-shadow-text) 0px 0px 4px 3px;
     background-color: var(--color-especial);
     color: var(--color-fuente-sec);
+    box-shadow: 0px 0px 4px 3px var(--color-shadow-text);
 }
 
 #contacto-boton:hover {
@@ -394,15 +403,16 @@ body {
 /* ========== Pie de página ========== */
 footer {
     display: flex;
+    position: relative;
     align-items: center;
-    text-align: center;
     justify-content: space-between;
-    user-select: none;
+    text-align: center;
     padding: 8px 15px;
+    user-select: none;
     font-family: 'Ubuntu', sans-serif;
-    box-shadow: var(--color-shadow-text) 0px 0px 4px 1px;
     background-color: var(--color-contenedor);
     color: grey;
+    box-shadow: 0px 0px 4px 1px var(--color-shadow-text);
 }
 
 footer .foot-logo {
@@ -419,8 +429,9 @@ footer .foot-texto {
 }
 
 
-/* ============================================================== */
-/*          Configuración para dispositivos medios              */
+/* =============================================================================================== */
+/* |                         Configuración para dispositivos medios                              | */
+/* =============================================================================================== */
 @media (max-width: 1024px) {
     /* ========== Navegación/Menu ========== */
     .barra-nav {
@@ -460,12 +471,11 @@ footer .foot-texto {
 
     /* ========== Inicio ========== */
     .portada-imagen .portada-contenido {
-        padding: 0px;
         margin: 0px 20px;
+        padding: 0px;
     }
     
     #portada-dibujo {
-        margin: 0px 20px;
         width: 225px;
     }
     
@@ -476,8 +486,8 @@ footer .foot-texto {
     }
     
     #portada-nombre {
-        font-size: 17px;
         padding-right: 20px;
+        font-size: 17px;
     }
 
     /* ========== Mi CV ========== */
@@ -509,19 +519,18 @@ footer .foot-texto {
     
     /* Lado derecho del CV */
     .CV .CV-derecha {
-        line-height: 20px;
         padding: 0px 15px;
+        line-height: 20px;
     }
     
     .CV .CV-derecha .CV-encabezado {
+        margin-top: 15px;
+        margin-bottom: 0px;
         font-size: 25px;
-        padding-top: 15px;
-        padding-bottom: 0px;
     }
     
     .CV .CV-derecha .CV-experiencia, .CV .CV-derecha .CV-educacion {
         font-size: 16px;
-        padding-top: 10px;
     }
 
     .CV .CV-derecha .CV-actividades {
@@ -534,15 +543,13 @@ footer .foot-texto {
 
     /* ========== Contacto ========== */
     .contacto {
-        padding-top: 80px;
-        padding-bottom: 80px;
+        padding: 80px 0px;
     }
 
     .contacto .contacto-contenido {
         width: 75%;
-        padding: 30px 30px;
-        border-radius: 25px;
-        text-shadow: var(--color-shadow-text) 1px 2px 1px;
+        padding: 30px;
+        text-shadow: 1px 2px 1px var(--color-shadow-text);
     }
     
     .contacto .contacto-contenido .contacto-titulo {
@@ -552,7 +559,6 @@ footer .foot-texto {
     
     .contacto .contacto-contenido .contacto-info .contacto-texto {
         font-size: 14px;
-        font-weight: 500;
     }
     
     .contacto .contacto-contenido .contacto-info .contacto-datos {
@@ -567,9 +573,8 @@ footer .foot-texto {
     #contacto-boton {
         width: 140px;
         padding: 6px;
-        font-size: 15px;
         font-weight: 400;
-        box-shadow: var(--color-shadow-text) 0px 0px 4px 2px;
+        box-shadow: 0px 0px 4px 2px var(--color-shadow-text);
     }
 
     /* ========== Pie de página ========== */
@@ -584,8 +589,9 @@ footer .foot-texto {
 }
 
 
-/* ============================================================== */
-/*          Configuración para dispositivos chicos              */
+/* =============================================================================================== */
+/* |                         Configuración para dispositivos chicos                              | */
+/* =============================================================================================== */
 @media (max-width: 576px){
     /* ========== Navegación/Menu ========== */
     .barra-nav {
@@ -602,15 +608,15 @@ footer .foot-texto {
         position: fixed;
         flex-direction: column;
         text-align: justify;
-        overflow-x: hidden;
-        overflow-y: auto;
         width: 100%;
         height: calc(100% - 59px);
-        padding: 0px;
         top: 59px;
         left: 100%; /* Valor para ocultar la barra */
-        transition: 0.3s;
+        padding: 0px;
+        overflow-x: hidden;
+        overflow-y: auto;
         background-color: var(--color-menu-responsivo);
+        transition: 0.3s;
     }
     
     .barra-nav .menu .menu-item {
@@ -632,6 +638,7 @@ footer .foot-texto {
     
     .barra-nav .menu .menu-item .menu-enlace .menu-texto {
         display: flex;
+        position: absolute;
         justify-items: flex-start;
         width: 300px;
         padding: 0px 70px;
@@ -661,8 +668,8 @@ footer .foot-texto {
 
     /* ========== Inicio ========== */
     .portada-imagen .portada-contenido {
-        margin: 0px 15px;
         height: 200px;
+        margin: 0px 15px;
     }
     
     #portada-dibujo {
@@ -678,7 +685,6 @@ footer .foot-texto {
     
     #portada-nombre {
         font-size: 12px;
-        padding-right: 20px;
     }
 
     /* ========== Mi CV ========== */
@@ -694,6 +700,12 @@ footer .foot-texto {
         text-shadow: none;
     }
 
+    #foto {
+        margin: 0px;
+        padding: 0px;
+        border: 2px solid var(--color-borde-sec);
+    }
+
     #nombre {
         padding: 10px 7px;
         font-size: 15px;
@@ -706,31 +718,34 @@ footer .foot-texto {
     
     .CV .CV-izquierda .CV-datos {
         padding: 5px;
-        line-height: 170%;
         font-size: 7.5px;
     }
     
     /* Lado derecho del CV */
     .CV .CV-derecha {
-        line-height: 20px;
         width: 60%;
         padding: 0px 10px;
+        line-height: 15px;
     }
     
     .CV .CV-derecha .CV-encabezado {
+        margin-top: 7px;
         font-size: 15px;
-        padding-top: 7px;
     }
     
     .CV .CV-derecha .CV-experiencia, .CV .CV-derecha .CV-educacion {
+        margin: 15px 0px 5px;
         font-size: 10px;
-        padding-top: 5px;
     }
 
     .CV .CV-derecha .CV-actividades {
         padding-left: 15px;
     }
     
+    .CV .CV-derecha .CV-pasatiempos {
+        padding: 10px 5px;
+    }
+
     #CV-pasatiempo-logo {
         font-size: 30px;
     }
@@ -754,9 +769,8 @@ footer .foot-texto {
     }
 
     .contacto .contacto-contenido .contacto-info .contacto-datos {
-        width: 100%;
-        padding: 0px;
         margin-bottom: 9px;
+        padding: 0px;
         border-bottom: 1px solid gainsboro;
         font-size: 11px;
         font-weight: lighter;
@@ -776,11 +790,11 @@ footer .foot-texto {
 
     footer .foot-logo {
         width: 28px;
-        margin: 0px 8px;
+        margin: 0px 5px;
     }
 
     footer .foot-texto {
-        font-size: 6px;
         padding-top: 8px;
+        font-size: 7px;
     }
 }
